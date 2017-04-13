@@ -36,7 +36,7 @@ module.exports = function (config) {
               : ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.DISABLED,
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false

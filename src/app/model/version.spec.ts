@@ -27,7 +27,7 @@ describe('Version @unit', () => {
   it('should create an instance from string 5.99.0 and be greater than ' + versionString, () => {
     let stringVersion: Version = Version.fromString('5.99.0');
     expect(stringVersion).toBeDefined();
-    expect(stringVersion.isGreaterThen(version)).toBeFalsy();
+    expect(stringVersion.isGreaterThen(version)).toBeTruthy();
   });
 
   it('should parse ' + testVersion + ' correctly', () => {

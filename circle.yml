@@ -6,12 +6,21 @@ machine:
   yarn:
     version: 0.23.2
   environment:
+    YARN_VERSION: 0.23.2
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
 dependencies:
   override:
     - yarn
+  pre:
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      fi
+  post:
+    - bash .scripts/get-latest-chrome.sh
 cache_directories:
     - ~/.cache/yarn
 test:
   override:
-    - ng test --watch=false
+    - ng test --watch=false --log-level=
+    - ng e2e
