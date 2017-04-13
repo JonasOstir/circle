@@ -686,7 +686,7 @@ callsite@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
 
-camel-case@3.0.x:
+camel-case@3.0.x, camel-case@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camel-case/-/camel-case-3.0.0.tgz#ca3c3688a4e9cf3a4cda777dc4dcbc713249cf73"
   dependencies:
@@ -797,6 +797,12 @@ cli-cursor@^2.1.0:
   dependencies:
     restore-cursor "^2.0.0"
 
+cli-table@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.1.tgz#f53b05266a8b1a0b934b3d0821e6e2dc5914ae23"
+  dependencies:
+    colors "1.0.3"
+
 cli-width@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.1.0.tgz#b234ca209b29ef66fc518d9b98d5847b00edf00a"
@@ -878,6 +884,10 @@ colormin@^1.0.5:
     css-color-names "0.0.4"
     has "^1.0.1"
 
+colors@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
+
 colors@1.1.2, colors@^1.1.0, colors@^1.1.2, colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
@@ -894,7 +904,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.9.x:
+commander@2.9.x, commander@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
@@ -1185,6 +1195,24 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
+cucumber@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/cucumber/-/cucumber-1.3.2.tgz#05c94590ab625c08792a6017a477b4cba99b8149"
+  dependencies:
+    camel-case "^3.0.0"
+    cli-table "^0.3.1"
+    co "^4.6.0"
+    colors "^1.1.2"
+    commander "^2.9.0"
+    duration "^0.2.0"
+    figures "1.7.0"
+    gherkin "^4.1.0"
+    glob "^7.0.0"
+    is-generator "^1.0.2"
+    lodash "^4.0.0"
+    stack-chain "^1.3.5"
+    stacktrace-js "^1.3.0"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -1194,6 +1222,18 @@ currently-unhandled@^0.4.1:
 custom-event@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.1.tgz#5d02a46850adf1b4a317946a3928fccb5bfd0425"
+
+d@1:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
+  dependencies:
+    es5-ext "^0.10.9"
+
+d@~0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/d/-/d-0.1.1.tgz#da184c535d18d8ee7ba2aa229b914009fae11309"
+  dependencies:
+    es5-ext "~0.10.2"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -1373,6 +1413,13 @@ duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
 
+duration@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/duration/-/duration-0.2.0.tgz#5f9c4dfaafff655de986112efe25c5978dd85146"
+  dependencies:
+    d "~0.1.1"
+    es5-ext "~0.10.2"
+
 ecc-jsbn@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
@@ -1488,6 +1535,34 @@ error-ex@^1.2.0:
   resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
   dependencies:
     is-arrayish "^0.2.1"
+
+error-stack-parser@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-1.3.6.tgz#e0e73b93e417138d1cd7c0b746b1a4a14854c292"
+  dependencies:
+    stackframe "^0.3.1"
+
+es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14, es5-ext@~0.10.2:
+  version "0.10.15"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.15.tgz#c330a5934c1ee21284a7c081a86e5fd937c91ea6"
+  dependencies:
+    es6-iterator "2"
+    es6-symbol "~3.1"
+
+es6-iterator@2:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.1.tgz#8e319c9f0453bf575d374940a655920e59ca5512"
+  dependencies:
+    d "1"
+    es5-ext "^0.10.14"
+    es6-symbol "^3.1"
+
+es6-symbol@^3.1, es6-symbol@~3.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
+  dependencies:
+    d "1"
+    es5-ext "~0.10.14"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -1659,6 +1734,13 @@ faye-websocket@~0.11.0:
   resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.11.1.tgz#f0efe18c4f56e4f40afc7e06c719fd5ee6188f38"
   dependencies:
     websocket-driver ">=0.5.1"
+
+figures@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    object-assign "^4.1.0"
 
 figures@^2.0.0:
   version "2.0.0"
@@ -1842,6 +1924,10 @@ getpass@^0.1.1:
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.6.tgz#283ffd9fc1256840875311c1b60e8c40187110e6"
   dependencies:
     assert-plus "^1.0.0"
+
+gherkin@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/gherkin/-/gherkin-4.1.1.tgz#f2d1b88c1b92fe1c04275c66c21be8a9d85cfa44"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -2304,6 +2390,10 @@ is-fullwidth-code-point@^1.0.0:
 is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
+
+is-generator@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-generator/-/is-generator-1.0.3.tgz#c14c21057ed36e328db80347966c693f886389f3"
 
 is-glob@^2.0.0, is-glob@^2.0.1:
   version "2.0.1"
@@ -3681,7 +3771,15 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-protractor@~5.1.0:
+protractor-cucumber-framework@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/protractor-cucumber-framework/-/protractor-cucumber-framework-2.3.0.tgz#6339cfcf19d0b8d91c6782ff0cd403a661865e8a"
+  dependencies:
+    debug "^2.2.0"
+    glob "^7.0.3"
+    q "^1.4.1"
+
+protractor@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/protractor/-/protractor-5.1.1.tgz#10c4e336571b28875b8acc3ae3e4e1e40ef7e986"
   dependencies:
@@ -4312,7 +4410,7 @@ source-map@0.1.x, source-map@^0.1.41, source-map@~0.1.33, source-map@~0.1.7:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
+source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -4374,6 +4472,39 @@ sshpk@^1.7.0:
     jodid25519 "^1.0.0"
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
+
+stack-chain@^1.3.5:
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/stack-chain/-/stack-chain-1.3.7.tgz#d192c9ff4ea6a22c94c4dd459171e3f00cea1285"
+
+stack-generator@^1.0.7:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stack-generator/-/stack-generator-1.1.0.tgz#36f6a920751a6c10f499a13c32cbb5f51a0b8b25"
+  dependencies:
+    stackframe "^1.0.2"
+
+stackframe@^0.3.1, stackframe@~0.3:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-0.3.1.tgz#33aa84f1177a5548c8935533cbfeb3420975f5a4"
+
+stackframe@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.0.2.tgz#162245509c687d328b14f671dab8fdb755b1e1e8"
+
+stacktrace-gps@^2.4.3:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/stacktrace-gps/-/stacktrace-gps-2.4.4.tgz#69c827e9d6d6f41cf438d7f195e2e3cbfcf28c44"
+  dependencies:
+    source-map "0.5.6"
+    stackframe "~0.3"
+
+stacktrace-js@^1.3.0:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/stacktrace-js/-/stacktrace-js-1.3.1.tgz#67cab2589af5c417b962f7369940277bb3b6a18b"
+  dependencies:
+    error-stack-parser "^1.3.6"
+    stack-generator "^1.0.7"
+    stacktrace-gps "^2.4.3"
 
 "statuses@>= 1.3.1 < 2", statuses@~1.3.1:
   version "1.3.1"
@@ -5072,16 +5203,9 @@ write-file-atomic@^1.1.2:
     imurmurhash "^0.1.4"
     slide "^1.1.5"
 
-ws@1.1.1:
+ws@1.1.1, ws@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.1.tgz#082ddb6c641e85d4bb451f03d52f06eabdb1f018"
-  dependencies:
-    options ">=0.0.5"
-    ultron "1.0.x"
-
-ws@^1.0.1:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.4.tgz#57f40d036832e5f5055662a397c4de76ed66bf61"
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
