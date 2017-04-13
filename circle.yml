@@ -1,6 +1,8 @@
 machine:
   environment:
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  yarn:
+    version: 0.23.2
 dependencies:
   override:
     - yarn
