@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/JonasOstir/circle.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/JonasOstir/circle)
+
 # Circle
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.

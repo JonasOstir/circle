@@ -1,5 +1,5 @@
 // Protractor configuration file, see link for more information
-// https://github.com/angular/protractor/blob/master/lib/config.ts
+// https://github.com/angular/protractor/blob/master/docs/referenceConf.js
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -15,12 +15,15 @@ exports.config = {
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
     require: './e2e/steps/**/*.ts',
-    tags: false
+    tags: false,
   },
   useAllAngular2AppRoots: true,
   beforeLaunch: function() {
     require('ts-node').register({
-      project: 'e2e'
+      project: 'e2e/tsconfig.e2e.json'
     });
-  }
+  },
+  // onPrepare() {
+  //   jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+  // }
 };

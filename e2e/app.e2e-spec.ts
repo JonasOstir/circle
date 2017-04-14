@@ -1,10 +1,10 @@
-import { CirclePage } from './app.po';
+import { ManagerPage } from './app.po';
 
-describe('circle App', () => {
-  let page: CirclePage;
+xdescribe('Manager App', function() {
+  let page: ManagerPage;
 
   beforeEach(() => {
-    page = new CirclePage();
+    page = new ManagerPage();
   });
 
   it('should display message saying app works', () => {
