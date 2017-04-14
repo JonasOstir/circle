@@ -119,8 +119,8 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "directive-selector": [true, "attribute", "ls", "kebab-case"],
-    "component-selector": [true, "element", "ls", "kebab-case"],
+    "directive-selector": [true, "attribute", "app", "kebab-case"],
+    "component-selector": [true, "element", "app", "kebab-case"],
     "import-spacing": true,
     "member-access": [
       true,

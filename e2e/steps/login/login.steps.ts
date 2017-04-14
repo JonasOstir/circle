@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { LoginPage } from '../../pages/login/login.page';
 
 let chai: any = require('chai');
