@@ -22,6 +22,6 @@ cache_directories:
     - ~/.cache/yarn
 test:
   override:
-    - ng lint
-    - ng test --watch=false --log-level=
+    - ng lint --format=stylish
+    - ng test --watch=false
     - ng e2e
